@@ -14,6 +14,7 @@ def pygmentize(key, value, format, meta):
         [[ident, classes, keyvals], code] = value
 
         lexer = None
+        klass = 'shell'
         for klass in classes:
             if klass == "commonlisp":
                 klass = "lisp"
